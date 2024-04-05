@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'todo.apps.TodoConfig',  # Keep only this entry
+    'todo.apps.TodoConfig',  
     'rest_framework',
     'corsheaders',
 ]
@@ -61,9 +61,7 @@ MIDDLEWARE = [
 
 # CORS configuration
 CORS_ALLOW_ALL_ORIGINS = True
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000'
-]
+
 
 # Root URL configuration
 ROOT_URLCONF = 'backend.urls'
